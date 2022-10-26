@@ -671,7 +671,7 @@ a{
 }
 
 
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1440px) {
   p{
     font-size: 18pt;
   }
@@ -691,16 +691,26 @@ a{
     margin-top: 1.5rem;
   }
   .navbar3{
-    margin-left: 25rem;
+    margin-left: 15rem;
   }
   .header{
     font-size: 150%;
+  }
+  .header .col2{
+    width: 50%;
+
   }
   .Features{
     font-size: 120%;
   }
   .feature .col1 p{
     font-size: 18pt;
+  }
+  .feature .col2 img{
+    width: 100%;
+  }
+  .Features .develop{
+    margin-top: -29rem;
   }
   .Features .develop a, .Features .deploy a, .Features .securely a{
     font-size: 18pt;
@@ -714,35 +724,65 @@ a{
   .offers{
     font-size: 150%;
   }
+  .offers .row .outer{
+    height: 25rem;
+  }
+  .offers .row .outer .inner{
+    height: 18rem;
+  }
   .offers .row .one .inner p{
-    margin-top: 5.8rem;
+    margin-top: 4.8rem;
   }
   .offers .row .two .inner p{
-    margin-top: 5.5rem;
+    margin-top: 6.8rem;
+  }
+  .offers .row .outer .inner a{
+    font-weight: 600;
   }
   .StartWithUs{
-    font-size: 150%;
+    font-size: 130%;
   }
   .StartWithUs .left{
-    width: 50%;
+    width: 40%;
+    margin-top: 5rem;
+    font-size: 120%;
+  }
+  .StartWithUs button{
+    font-size: 80%;
   }
   .StartWithUs .right{
-    width: 50%;
+    width: 60%;
+  }
+  .Mission h5{
+    font-size: 130%;
   }
   .Mission .row1 img{
     width: 60%;
   }
   .articles{
-    font-size: 150%;
+    font-size: 100%;
+  }
+  .articles .row2 .inner p{
+    font-size: 90%;
   }
   .articles .row2 .inner a{
-    font-size: 80%;
+    font-size: 90%;
+  }
+  .articles .row2 .two .inner a{
+    font-size: 90%;
+  }
+  .articles .row2 .two .inner .ppp{
+    margin-bottom: 1.1rem;
+  }
+  .articles .row2 .outer .inner img{
+    width: 10px;
+    height: 10px;
   }
   .join, .newsLetter{
     font-size: 150%;
   }
-  button{
-    font-size: 150%;
+  .join button{
+    font-size: 80%;
   }
   .footer{
     font-size: 120%;
@@ -760,7 +800,9 @@ a{
     color: white;
   }
   .company a, .inner a{
-    background-color: black;
+    color: white;
+  }
+  .foot h3{
     color: white;
   }
   }
