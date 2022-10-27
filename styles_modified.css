@@ -8,6 +8,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 
@@ -15,7 +16,11 @@ body {
   font-family: DM Sans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width:100vw;
+  max-width: 1440px;;
+}
+
+*{
+  max-width: 1440px;
 }
 
 button{
@@ -62,17 +67,52 @@ a{
   padding-top: 2%;
   font-weight: bolder;
 }
+.navbar1 a{
+  color:black;
+}
 .navbar2, .navbar3{
   display: none;
 }
 #red{
   color: rgb(209, 23, 23);
 }
-.navbar4{
-  padding-top: 2%;
-  position: absolute;
-  right: 6%;
+
+/* Hamburger */
+.navbar4 a {
+  color: rgb(37, 19, 19);
+  width: 100vw;
+  text-decoration: none;
+  font-size: 14pt;
 }
+.hamburger .ham{
+  position: absolute;
+  top: 1.0rem;
+  right: 2.7rem;
+}
+.hamburger  #myLinks {
+  display: none;
+  position:relative;
+  margin: 2rem 0 auto -13rem;
+  padding: 10px 3.2rem;
+  width: 100%;
+  font-weight: 600;
+}
+.hamburger #myLinks a{
+  padding-top: .7rem;
+  padding-left: .8rem;
+  padding-bottom: .3rem;
+}
+#myLinks a:hover {
+  background-color: rgb(89,184,140);
+  color: white;
+}
+ .ham .icon{
+  display: block;
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+}
+
 
 
 /* header */
@@ -275,7 +315,9 @@ a{
   color: rgb(117, 111, 111);
 }
 .Mission .row3 img{
-  width: 80%;
+  width: 200px;
+  height: 50px;
+  padding: .5rem 0;
 }
 
 
@@ -295,7 +337,7 @@ a{
   margin-bottom: 4rem;
 }
 .articles .row2 .outer img{
-  width: 100%;
+  width:100%;
   height: 11rem;
 }
 .articles .row2 .outer .inner img{
@@ -310,7 +352,7 @@ a{
   border: 1px solid rgb(217, 210, 210);
   padding: 1.9rem 1rem .5rem;
   background-color: white;
-  height: 10rem;
+  height: fit-content;
 }
 .articles .inner p{
   font-size: 11pt;
@@ -360,7 +402,7 @@ a{
 .footer{
   background-color:  rgb(249,250,251);
   padding: 3rem 1rem;
-  line-height: 120%;
+  line-height: 20.83px;
   margin-top: 3rem;
 }
 .footer hr{
@@ -373,8 +415,14 @@ a{
   margin-bottom: .5rem;
 }
 .footer .box1 .biz_name img{
-  margin:  -.5rem 0 0 -1rem;
-  height: 50px;
+  margin:  -.7rem 0 0 -1rem;
+  height: 45px;
+}
+.biz_name h3{
+  margin-left: -.7rem;
+}
+.up{
+  margin-bottom: .9rem;
 }
 .company{
   color: rgb(57, 52, 52);
@@ -382,6 +430,7 @@ a{
 .company a{
   color: rgb(96, 90, 90);
   font-size: 13pt;
+  line-height: 21px;
 }
 .address{
   color: rgb(57, 52, 52);
@@ -389,9 +438,30 @@ a{
 .address h3{
   margin-bottom: .5rem;
 }
+.address p{
+  font-size: 13pt;
+}
 
 
 /* Media responsiveness */
+@media only screen and (min-width: 375px) {
+  .articles .row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .articles .row2 .outer{
+    max-width: 340px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .articles .row2 .outer img{
+    width: cover;
+  }
+}
+
+
 @media only screen and (min-width: 600px) {
   h4{
     font-size: 120%;
@@ -404,10 +474,18 @@ a{
     font-size: 14pt;
   }
   .navbar img{
-    padding-top: 1%;
+    padding-top: .6rem;
+    height: 45px;
   }
   .navbar1{
     margin-left: -2%;
+  }
+  .navbar4 .hamburger .ham .icon{
+    margin-top: .6rem;
+  }
+  .hamburger #myLinks{
+    margin-left: -17rem;
+    padding-top: 1.5rem;
   }
   .offers .inner p{
     font-size: 14pt;
@@ -417,6 +495,9 @@ a{
   }
   .company h3{
     margin-bottom: .5rem;
+  }
+  .footer h3{
+    font-size: 18pt;
   }
 }
 
@@ -440,6 +521,9 @@ a{
   .navbar1{
     margin-left: -1%;
   }
+  .hamburger #myLinks{
+    margin-left: -17rem;
+  }
   .btn button{
     width: 25%;
     padding: 1rem;
@@ -451,13 +535,23 @@ a{
     width: 46%;
   }
   .offers .three{
-    margin-top: 23rem;
+    clear: both;
   }
   .Mission .row2{
     display: block;
   }
   .StartWithUs{
     clear: both;
+  }
+  .StartWithUs .right{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+  }
+  .articles .row2{
+    display:list-item;
   }
   .Mission .row2 .box1, .Mission .row2 .box2, .Mission .row2 .box3{
     width: 47%;
@@ -495,13 +589,22 @@ a{
   .navbar img{
     width: 70px;
     height: 50px;
+    margin-left: -1.2rem;
   }
   .navbar{
+    width: 95vw;
     font-size: 80%;
+    background-color: white;
+    z-index: 1000;
+    position:fixed;
+    height: 3.5rem;
+  }
+  .navbar1{
+    margin-top: .4rem;
   }
   .navbar2{
     display: block;
-    margin: 1.3rem 0 auto 4rem;
+    margin: 1.6rem 0 auto 4.8rem;
     font-size: 130%;
     font-weight: 600;
   }
@@ -515,13 +618,15 @@ a{
   }
   .navbar3{
     display: block;
-    margin: .6rem 0 auto 6rem;
+    position: absolute;
+    right: .4%;
+    margin-top: .9rem;
     font-size: 130%;
     font-weight: 600;
   }
   .navbar3 a{
     color: black;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
   }
   .navbar3 button{
     padding: .7rem;
@@ -531,12 +636,13 @@ a{
     display: none;
   }
   .header{
+    margin-top: 4rem;
     display: flex;
     font-size: larger;
   }
   .header .col1{
     width: 60%;
-    margin-top: 7rem;
+    margin-top: 8rem;
     padding: 0%;
   }
   .welcome{
@@ -561,6 +667,9 @@ a{
   }
   .develop, .deploy, .securely{
     width: 50%;
+  }
+  .develop .left, .deploy .left, .securely .left{
+    max-width: 60px;
   }
   .develop{
     margin-top: -23rem;
@@ -591,12 +700,13 @@ a{
     margin-top: -.8rem;
   }
   .offers .row .two .inner p{
-    margin-top: -2.2rem;
+    margin-top: 4.3rem;
   }
   .offers .row .three .inner p{
     margin-top: -2rem;
   }
   .StartWithUs{
+    margin-top: 4rem;
     display: flex;
   }
   .StartWithUs .left{
@@ -605,6 +715,16 @@ a{
   .StartWithUs .right{
     width: 60%;
   }
+  .Mission .row1 h3{
+    font-size: 48px;
+    line-height: 62.5px;
+  }
+  .Mission .row1 h5{
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+  } 
   .Mission .row2{
     display: flex;
     clear: both;
@@ -621,27 +741,23 @@ a{
   .Mission .row3{
     margin-top: auto;
     width: 100%;
+    padding-right: 63px;
   } 
-  .Mission .row3 img{
-    width: 16%;
-  }
   .articles .row2{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .articles .row2 .outer{
     width: 30%;
     margin-left: 1rem;
   }
   .articles .row2 .outer .inner{
-    height: 10.5rem;
+    height: 10rem;
   }
   .articles .row2 .one .inner a{
-    margin-top: -1rem;
+    margin-top: -4.6rem;
   }
-  .articles .row2 .two .inner a{
-    margin-top: 1.5rem;
-  }
-
   .newsLetter{
     display: flex;
   }
@@ -679,6 +795,11 @@ a{
 
 
 @media only screen and (min-width: 1440px) {
+  *{
+    max-width: 1900px;
+    /* display: flex; */
+    justify-content: center;
+  }
   p{
     font-size: 18pt;
   }
@@ -688,14 +809,22 @@ a{
   .navbar img{
     height: 60px;
     width: 80px;
-    margin-top: -.4rem;
+    position: absolute;
+    left: 3.5%;
+    /* margin-top: -.4rem;
+    margin-left: -21.1rem; */
   }
   .navbar1{
-    margin-top: -.4rem;
+    position: absolute;
+    left: 6.5%;
   }
   .navbar2{
-    margin-left: 10rem;
+    position: absolute;
+    left: 35%;
     margin-top: 1.5rem;
+  }
+  .navbar2 a{
+    padding-right: 2rem;
   }
   .navbar3{
     margin-left: 15rem;
@@ -809,8 +938,6 @@ a{
   .footer p{
     font-size: 14pt;
   }
-
-
 }
 
 
@@ -819,10 +946,10 @@ a{
     background-color: black;
     color: white;
   }
-  p{
+  .articles .row1 h5, p{
     color: white;
   }
-  .company a, .inner a{
+  .company a, .inner a,.Mission .row3 img{
     color: white;
   }
   .foot h3{
