@@ -29,28 +29,48 @@
         <img src="./logo.png" alt="logo" id="logo"></i>
 
         <div class="navbar1">
-            <h3>PINUT<span id="red">Security</span></h3>
+            <a href="#home" class="active">
+                <h3>
+                    PINUT<span id="red">Security</span>
+                </h3>
+            </a>
         </div>
 
         <div class="navbar2">
-            <a href="" id="home">Home</a>
-            <a href="">Contact Us</a>
-            <a href="">FAQ</a>
+            <a href="#header" id="home">Home</a>
+            <a href="#footer">Contact Us</a>
+            <a href="#offer">FAQ</a>
         </div>
 
         <div class="navbar3">
-            <a href="">Login</a>
+            <a href="#join">Login</a>
             <button class="colored">Sign up</button>
         </div>
 
         <div class="navbar4">
-            <span class="material-symbols-outlined">
-                menu
-                </span>
+            <div class="hamburger">
+
+                <div class="ham">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </a>
+                </div>
+
+                <div id="myLinks">
+                    <a href="#header">Home</a>
+                    <a href="#footer">Contact Us</a>
+                    <a href="#offer">FAQ</a>
+                    <a href="#join">Login</a>
+                    <a href="#join">Sign up</a>
+                </div>
+            </div>
         </div>
+        
     </div>
 
-    <div class="header">
+    <div class="header" id="header">
         <div class="col1">
             <div class="head">
                 <h4 class="welcome">Welcome to Pinut Security Consulting</h4>
@@ -165,7 +185,7 @@
         </div>
     </div>
 
-    <div class="offers">
+    <div class="offers" id="offers">
         <h3>What we offer</h3>
         <br>
         <div class="row">
@@ -213,7 +233,7 @@
         </div>
     </div>
 
-    <div class="StartWithUs">
+    <div class="StartWithUs" id="StartWithUs">
         <div class="left">
             <h3>Develop, Deploy & <br> Use securely</h3>
             <h4>Start with us today.</h4>
@@ -226,18 +246,18 @@
         <div class="right">
             <div class="row1">
                 <img src="./collage1.jpeg" alt="photo_collage" id="pic11">
-                <img src="/collage2.png" alt="photo_collage" id="pic12">
+                <img src="./collage2.png" alt="photo_collage" id="pic12">
             </div>
 
             <div class="row2">
                 <img src="./collage3.jpeg" alt="photo_collage" id="pic21">
-                <img src="/collage4.png" alt="photo_collage" id="pic22">
-                <img src="/collage5.png" alt="photo_collage" id="pic23">
+                <img src="./collage4.png" alt="photo_collage" id="pic22">
+                <img src="./collage5.png" alt="photo_collage" id="pic23">
             </div>
         </div>
     </div>
 
-    <div class="Mission">
+    <div class="Mission" id="mission">
         <div class="row1">
             <button>Features</button>
             <br>
@@ -318,7 +338,7 @@
             </div>
 
             <div class="outer two">
-                <img src="/image2.jpeg" alt="emerging_tech" />
+                <img src="./image2.jpeg" alt="emerging_tech" />
                 
                 <div class="inner">
                     <p>Article</p>
@@ -334,7 +354,7 @@
             </div>
         
             <div class="outer three">
-                <img src="/image3.jpeg" alt="future" />
+                <img src="./image3.jpeg" alt="future" />
                 
                 <div class="inner">
                     <p>Article</p>
@@ -351,7 +371,7 @@
         </div>
     </div>
 
-    <div class="join">
+    <div class="join" id="join">
         <h4>
         Join other companies securing their IT infrastructures with Pinut
         </h4>
@@ -377,7 +397,7 @@
     </div>
     <br>
 
-    <div class="footer">
+    <div class="footer" id="footer">
         <hr>
         <br>
         <div class="foot">
@@ -385,12 +405,13 @@
             <div class="biz_name">
                 <img src="./logo.png" alt="logo" id="logo"/>
                 <h3>PINUT<span id="red">Security</span></h3>
+                <br>
             </div>
 
-            <p>
+            <p class="up">
                 Develop, Deploy & Use securely
-            <br />
-
+            </p>
+            <p class="down">
                 Need help:<br />
                 P: +234 235 156 7895 <br />
                 E: support@pinutsecurity.ng <br />
@@ -410,7 +431,7 @@
         <div class="address">
             <h3>Address</h3>
             <p>
-              6th Floor (Regus) Landmark Towers, Water Corporation Drive, VI,
+              6th Floor (Regus) Landmark Towers, <br> Water Corporation Drive, VI,
               Lagos
             </p>
         </div>
@@ -419,7 +440,19 @@
 
         <hr />
         <p>2022. Pinut Technologies. All rights reserved.</p>
-    </div>
+    <!-- </div> -->
+
+    <script>
+        function myFunction() {
+          let x = document.getElementById("myLinks");
+          if (x.style.display === "flex") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "flex";
+            x.style.flexDirection = "column";
+          }
+        }
+        </script>
 
   </body>
 </html>
