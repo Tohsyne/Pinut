@@ -752,11 +752,14 @@ a{
     width: 30%;
     margin-left: 1rem;
   }
+  .articles .row2 .outer img{
+    height: 13rem;
+  }
   .articles .row2 .outer .inner{
     height: 10rem;
   }
-  .articles .row2 .one .inner a{
-    margin-top: -4.6rem;
+  .articles .row2 .one .inner .oneP{
+    margin-top: -.8rem;
   }
   .newsLetter{
     display: flex;
@@ -794,28 +797,51 @@ a{
 }
 
 
+@media only screen and (min-width: 1150px) {
+  .articles .row2 .two .inner p{
+    margin-top: 1rem;
+  }
+}
+
+
+@media only screen and (width: 1366px) {
+  .offers .row .one .inner p{
+    margin-top: 6rem;
+  }
+  .offers .row .two .inner p{
+    margin-top: 6rem;
+  }
+  .offers .row .three .inner p{
+    margin-top: 4rem;
+  }
+  .articles .row2 .one .inner .oneP{
+    margin-top: .8rem;
+  }
+}
+
+
 @media only screen and (min-width: 1440px) {
   *{
-    max-width: 1900px;
-    /* display: flex; */
+    max-width: 1440px;
     justify-content: center;
   }
   p{
     font-size: 18pt;
   }
   .navbar{
-    font-size: 100%;
+    margin-top: -.1.5rem;
+    font-size: 16px;
   }
   .navbar img{
-    height: 60px;
+    height: 50px;
     width: 80px;
     position: absolute;
-    left: 3.5%;
-    /* margin-top: -.4rem;
-    margin-left: -21.1rem; */
+    left: 3.4%;
   }
   .navbar1{
+    margin-left: .2rem;
     position: absolute;
+    top: .2rem;
     left: 6.5%;
   }
   .navbar2{
@@ -834,7 +860,6 @@ a{
   }
   .header .col2{
     width: 50%;
-
   }
   .Features{
     font-size: 120%;
@@ -852,6 +877,7 @@ a{
     font-size: 18pt;
   }
   .infrastructures{
+    margin: 8rem auto;
     font-size: 180%;
   }
   .infrastructures button{
@@ -887,13 +913,23 @@ a{
     font-size: 80%;
   }
   .StartWithUs .right{
-    width: 60%;
+    width: 40%;
   }
   .Mission h5{
     font-size: 130%;
   }
   .Mission .row1 img{
     width: 60%;
+  }
+  .Mission .row3{
+    width: 100%;
+  }
+  .Mission #washington{
+    padding-left: 0%;
+  }
+  .Mission .row3 img{
+    width: 8rem;
+    padding-left: 3rem;
   }
   .articles{
     font-size: 100%;
@@ -904,40 +940,60 @@ a{
   .articles .row2 .inner a{
     font-size: 90%;
   }
+  .articles .row2 .one .inner br{
+    display: none;
+  }
   .articles .row2 .two .inner a{
     font-size: 90%;
   }
-  .articles .row2 .two .inner .ppp{
-    margin-bottom: 1.1rem;
+  .articles .row2 .one .inner .oneP{
+    margin-top: .7rem;
   }
   .join, .newsLetter{
     font-size: 150%;
   }
   .join button{
-    font-size: 80%;
+    font-size: 14pt;
   }
   .footer{
     font-size: 70%;
     line-height: 200%;
+    padding-left: 6rem;
+  }
+  .footer hr{
+    font-size: 12pt;
+    width: 95%;
+    margin-left: -.35rem;
+    color: grey;
+  }
+  .foot .box1 .biz_name{
+    margin-left: -8.5rem;
   }
   .foot .box1 p{
     font-size: 13pt;
   }
   .company{
     margin-left: 19rem;
+    width: 30%;
   }
   .company a{
-    font-size: 14pt;
+    font-size: 12pt;
   }
   .address{
-    margin-left: 14rem;
+    margin-left: -6rem;
   }
   .address p{
     font-size: 12pt;
   }
   .footer p{
-    font-size: 14pt;
+    font-size: 13pt;
   }
+}
+
+@media only screen and (min-width: 1500px) {
+body{
+  padding-left: 13%;
+}
 }
 
 
@@ -955,4 +1011,4 @@ a{
   .foot h3{
     color: white;
   }
-  }
+}
