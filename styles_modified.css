@@ -825,6 +825,7 @@ a{
   *{
     max-width: 1440px;
     justify-content: center;
+    margin: auto;
   }
   p{
     font-size: 18pt;
@@ -863,7 +864,7 @@ a{
     width: 50%;
   }
   .Features{
-    font-size: 120%;
+    font-size: 100%;
   }
   .feature .col1 p{
     font-size: 18pt;
