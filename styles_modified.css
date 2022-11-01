@@ -892,6 +892,8 @@ a{
   }
   .offers .row .outer .inner{
     height: 18rem;
+    min-height: 17.99999rem;
+    max-height: 18.001rem;
   }
   .offers .row .one .inner p{
     margin-top: 4.2rem;
