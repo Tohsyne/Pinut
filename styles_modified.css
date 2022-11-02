@@ -20,7 +20,7 @@ body {
 }
 
 *{
-  max-width: 1440px;
+  /* max-width: 1440px; */
 }
 
 button{
@@ -112,7 +112,6 @@ a{
   height: fit-content;
   width: fit-content;
 }
-
 
 
 /* header */
@@ -242,7 +241,7 @@ a{
 }
 .StartWithUs button{
   font-size: 10pt;
-  padding: 1rem 2rem;
+  padding: 0.8rem 0.5rem;
 }
 .StartWithUs .right{
   width: 100%;
@@ -287,7 +286,7 @@ a{
   background-color: rgb(202,227,216);
   color: rgb(96,187,145);
   border-radius: 30px;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem;
   border: none;
 }
 .Mission .row1 h5{
@@ -316,8 +315,8 @@ a{
 }
 .Mission .row3 img{
   width: 200px;
-  height: 40px;
-  padding: .8rem 0;
+  height: 50px;
+  padding: .5rem 0;
 }
 
 
@@ -584,12 +583,12 @@ a{
 
 @media only screen and (min-width: 1024px) {
   .navbar, .header, .Features, .infrastructures, .offers, .StartWithUs, .Mission, .articles, .join, .newsLetter, .footer{
-    padding-left: 4rem;
+    padding-left: 3rem;
   }
   .navbar img{
     width: 70px;
     height: 50px;
-    margin-left: -1.8rem;
+    margin-left: -1.2rem;
   }
   .navbar{
     width: 95vw;
@@ -598,7 +597,6 @@ a{
     z-index: 1000;
     position:fixed;
     height: 3.5rem;
-    padding-bottom: 2rem;
   }
   .navbar1{
     margin-top: .4rem;
@@ -698,13 +696,13 @@ a{
     height: 15rem;
   }
   .offers .row .one .inner p{
-    margin-top: 2rem;
+    margin-top: -.8rem;
   }
   .offers .row .two .inner p{
-    margin-top: -1rem;
+    margin-top: 4.3rem;
   }
   .offers .row .three .inner p{
-    margin-top: 0rem;
+    margin-top: -2rem;
   }
   .StartWithUs{
     margin-top: 4rem;
@@ -757,10 +755,10 @@ a{
     height: 13rem;
   }
   .articles .row2 .outer .inner{
-    height: 10rem;
+    max-height: 10rem;
   }
   .articles .row2 .one .inner .oneP{
-    margin-top: 0rem;
+    margin-top: -.8rem;
   }
   .newsLetter{
     display: flex;
@@ -792,18 +790,67 @@ a{
   .address{
     margin-left: 5rem;
     width: 30%;
-
   }
-
 }
 
+@media only screen and (min-width: 1043px) and (max-width: 1440px) {
+  .offers .row .one .inner p{
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1089px) and (max-width: 1440px) {
+  .offers .row .two .inner p{
+    margin-top: 5.6rem;
+  }
+}
+@media only screen and (min-width: 1091px) and (max-width: 1440px) {
+  .offers .row .three .inner p{
+    margin-top: -1rem;
+  }
+}
+@media only screen and (min-width: 1138px) and (max-width: 1440px) {
+  .articles .row2 .one .inner .oneP{
+    margin-top: 1rem;
+  }
+}
 
 @media only screen and (min-width: 1150px) {
   .articles .row2 .two .inner p{
-    margin-top: 0rem;
+    margin-top: 1rem;
+  }
+  .offers .row .one .inner p{
+    margin-top: 5rem;
   }
 }
-
+@media only screen and (min-width: 1268px) and (max-width: 1440px) {
+  .offers .row .one .inner p{
+    margin-top: 6.8rem;
+  }
+}
+@media only screen and (min-width: 1277px) and (max-width: 1440px){
+  .offers .row .two .inner p{
+    margin-top: 6.5rem;
+  }
+}
+@media only screen and (min-width: 1291px) and (max-width: 1440px){
+  .offers .row .two .inner p{
+    margin-top: 6.7rem;
+  }
+  .offers .row .three .inner p{
+    margin-top: 3.5rem;
+  }
+}
+@media only screen and (min-width: 1353px) and (max-width: 1440px){
+  .offers .row .three .inner p{
+    margin-top: 4.7rem;
+  }
+}
+@media only screen and (min-width: 1397px) and (max-width: 1440px){
+  .offers .row .three .inner p{
+    margin-top: 6.2rem;
+  }
+}
 
 @media only screen and (width: 1366px) {
   .offers .row .one .inner p{
@@ -822,13 +869,16 @@ a{
 
 
 @media only screen and (min-width: 1440px) {
-  *{
+  body {
     max-width: 1440px;
     justify-content: center;
     margin: auto;
   }
   p{
     font-size: 18pt;
+  }
+  .outerDiv{
+    background-color: rgb(249,250,251);
   }
   .navbar{
     margin-top: -.1.5rem;
@@ -838,7 +888,7 @@ a{
     height: 50px;
     width: 80px;
     position: absolute;
-    left: 3.9%;
+    left: 3.4%;
   }
   .navbar1{
     margin-left: .2rem;
@@ -863,6 +913,7 @@ a{
   .header .col2{
     width: 50%;
   }
+  /*  */
   .Features{
     font-size: 100%;
   }
@@ -878,6 +929,7 @@ a{
   .Features .develop a, .Features .deploy a, .Features .securely a{
     font-size: 18pt;
   }
+
   .infrastructures{
     margin: 8rem auto;
     font-size: 180%;
@@ -886,7 +938,7 @@ a{
     font-size: 60%;
   }
   .offers{
-    font-size: 150%;
+    font-size: 1.5rem;
   }
   .offers .row .outer{
     height: 25rem;
@@ -897,10 +949,10 @@ a{
     max-height: 18.001rem;
   }
   .offers .row .one .inner p{
-    margin-top: 4.2rem;
+    margin-top: 4.8rem;
   }
   .offers .row .two .inner p{
-    margin-top: 6.2rem;
+    margin-top: 6.8rem;
   }
   .offers .row .outer .inner a{
     font-weight: 600;
@@ -970,9 +1022,6 @@ a{
     margin-left: -.35rem;
     color: grey;
   }
-  .foot .box1 .biz_name{
-    margin-left: -8.5rem;
-  }
   .foot .box1 p{
     font-size: 13pt;
   }
@@ -994,10 +1043,33 @@ a{
   }
 }
 
+
 @media only screen and (min-width: 1500px) {
-body{
-  padding-left: 13%;
-}
+  body{
+    max-width: none;
+  }
+  .outerNav{
+    background-color: white;
+    width: 100%;
+    padding: auto;
+    position:fixed;
+  }
+  .navbar, .header, .Features, .infrastructures, .offers, .StartWithUs, .Mission,.articles, .join, .newsLetter, .footer{
+    max-width: 1440px;
+    margin: auto;
+  }
+  .navbar{
+    position: relative;
+  }
+  .header{
+    margin-top: 4rem;
+  }
+  .offers .row .one .inner p{
+    margin-top: 5.2rem;
+  }
+  .foot .box1 .biz_name{
+    margin-left: 0rem;
+  }
 }
 
 
