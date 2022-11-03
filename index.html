@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
 
     <link 
         rel="stylesheet" 
@@ -25,72 +25,76 @@
   </head>
 
   <body>
-    <div class="navbar">
-        <img src="./logo.png" alt="logo" id="logo"></i>
+    <div class="outerNav">
+        <div class="navbar">
+            <img src="./images/logo.png" alt="logo" id="logo"></i>
 
-        <div class="navbar1">
-            <a href="#home" class="active">
-                <h3>
-                    PINUT<span id="red">Security</span>
-                </h3>
-            </a>
-        </div>
+            <div class="navbar1">
+                <a href="#home" class="active">
+                    <h3>
+                        PINUT<span id="red">Security</span>
+                    </h3>
+                </a>
+            </div>
 
-        <div class="navbar2">
-            <a href="#header" id="home">Home</a>
-            <a href="#footer">Contact Us</a>
-            <a href="#offer">FAQ</a>
-        </div>
+            <div class="navbar2">
+                <a href="#header" id="home">Home</a>
+                <a href="#footer">Contact Us</a>
+                <a href="#offer">FAQ</a>
+            </div>
 
-        <div class="navbar3">
-            <a href="#join">Login</a>
-            <button class="colored">Sign up</button>
-        </div>
+            <div class="navbar3">
+                <a href="#join">Login</a>
+                <button class="colored">Sign up</button>
+            </div>
 
-        <div class="navbar4">
-            <div class="hamburger">
+            <div class="navbar4">
+                <div class="hamburger">
 
-                <div class="ham">
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <span class="material-symbols-outlined">
-                            menu
-                        </span>
-                    </a>
-                </div>
+                    <div class="ham">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <span class="material-symbols-outlined">
+                                menu
+                            </span>
+                        </a>
+                    </div>
 
-                <div id="myLinks">
-                    <a href="#header">Home</a>
-                    <a href="#footer">Contact Us</a>
-                    <a href="#offer">FAQ</a>
-                    <a href="#join">Login</a>
-                    <a href="#join">Sign up</a>
+                    <div id="myLinks">
+                        <a href="#header">Home</a>
+                        <a href="#footer">Contact Us</a>
+                        <a href="#offer">FAQ</a>
+                        <a href="#join">Login</a>
+                        <a href="#join">Sign up</a>
+                    </div>
                 </div>
             </div>
+            
         </div>
-        
     </div>
 
-    <div class="header" id="header">
-        <div class="col1">
-            <div class="head">
-                <h4 class="welcome">Welcome to Pinut Security Consulting</h4>
-                <h3 class="headache">No more <br> security headaches</h3>
-                <p>
-                    Pinut security consulting is a next-gen cybersecurity technology
-                    company in the process of reinventing cybersecurity. We develop &
-                    deploy so you can use your devices securely.
-                </p>
+    <div class="outerDiv">
+        <div class="header" id="header">
+            <div class="col1">
+                <div class="head">
+                    <h4 class="welcome">Welcome to Pinut Security Consulting</h4>
+                    <h3 class="headache">No more <br> security headaches</h3>
+                    <p>
+                        Pinut security consulting is a next-gen cybersecurity technology
+                        company in the process of reinventing cybersecurity. We develop &
+                        deploy so you can use your devices securely.
+                    </p>
+                </div>
+                <div class="btn">
+                    <button>
+                        <i class="fa fa-play-circle-o" aria-hidden="true"></i> Demo
+                    </button>
+                    <button  class="colored">Sign up</button>
+                </div>
             </div>
-            <div class="btn">
-                <button>
-                    <i class="fa fa-play-circle-o" aria-hidden="true"></i> Demo
-                </button>
-                <button  class="colored">Sign up</button>
+        
+            <div class="col2">
+                <img src="./images/feature_image2.png" alt="hero" id="hero"/>
             </div>
-        </div>
-    
-        <div class="col2">
-            <img src="./feature_image2.png" alt="hero" id="hero"/>
         </div>
     </div>
 
@@ -108,13 +112,13 @@
         
 
             <div class="col2">
-                <img src="./feature_image3.png" alt="feature" id="featureImg">
+                <img src="./images/feature_image3.png" alt="feature" id="featureImg">
             </div>
         </div>
         
         <div class="develop">
             <div class="left">
-                <img src="./develop_icon.png" class="feature_icon"></img>
+                <img src="./images/develop_icon.png" class="feature_icon"></img>
             </div>
 
             <div class="right">
@@ -133,7 +137,7 @@
 
         <div class="deploy">
             <div class="left">
-                <img src="./deploy_icon.png" class="feature_icon">
+                <img src="./images/deploy_icon.png" class="feature_icon">
             </div>
 
             <div class="right">
@@ -151,7 +155,7 @@
 
         <div class="securely">
             <div class="left">
-                <img src="./securely_icon.png" class="feature_icon">
+                <img src="./images/securely_icon.png" class="feature_icon">
             </div>
 
             <div class="right">
@@ -190,7 +194,7 @@
         <br>
         <div class="row">
             <div class="outer one">
-                <img src="./no_1.png" alt="one" class="icon">
+                <img src="./images/no_1.png" alt="one" class="icon">
 
                 <div class="inner">
                     <h4>Vulnerability assessment & Penetration testing</h4>
@@ -199,59 +203,62 @@
                     "Pinut has saved us thousands of hours of work. We're able to work
                     securely"
                     </p>
-                    </p><a href="">Read more &nbsp;&nbsp;<img src="./arrow_ne.png"></img>
+
+                    <a href="">Read more &nbsp;&nbsp;<img src="./images/arrow_ne.png"></img>
                     </a>
                 </div>
             </div>
 
             <div class="outer two">
-                <img src="./no_2.png" alt="two" class="icon">
+                <img src="./images/no_2.png" alt="two" class="icon">
 
                 <div class="inner">
                     <h4>Application & API security Testing</h4>
                     <p>
                     "We've been using Pinut to secure our IT infrastructures and they provide the best services"
                     </p>
-                    <a href="">Read more &nbsp;&nbsp;<img src="./arrow_ne.png"></img>
+                    <a href="">Read more &nbsp;&nbsp;<img src="./images/arrow_ne.png"></img>
                     </a>
                 </div>
             </div>
 
             <div class="outer three">
-                <img src="./no_3.png" alt="three" class="icon">
+                <img src="./images/no_3.png" alt="three" class="icon">
 
                 <div class="inner">
                     <h4>DevSecOps implementation; Dynamic & Static application security testing</h4>
                     <p>
                         “Love the simplicity of the service and the prompt customer support”
                     </p>
-                    <a href="">Read more &nbsp;&nbsp;<img src="./arrow_ne.png" alt="north_east"></img>
+                    <a href="">Read more &nbsp;&nbsp;<img src="./images/arrow_ne.png" alt="north_east"></img>
                     </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="StartWithUs" id="StartWithUs">
-        <div class="left">
-            <h3>Develop, Deploy & <br> Use securely</h3>
-            <h4>Start with us today.</h4>
-            <br>
-            <button>Learn more</button>
-            <button class="colored">Get started</button>
-        </div>
-        <br>
-
-        <div class="right">
-            <div class="row1">
-                <img src="./collage1.jpeg" alt="photo_collage" id="pic11">
-                <img src="./collage2.png" alt="photo_collage" id="pic12">
+    <div class="outerDiv">
+        <div class="StartWithUs" id="StartWithUs">
+            <div class="left">
+                <h3>Develop, Deploy & <br> Use securely</h3>
+                <h4>Start with us today.</h4>
+                <br>
+                <button>Learn more</button>
+                <button class="colored">Get started</button>
             </div>
+            <br>
 
-            <div class="row2">
-                <img src="./collage3.jpeg" alt="photo_collage" id="pic21">
-                <img src="./collage4.png" alt="photo_collage" id="pic22">
-                <img src="./collage5.png" alt="photo_collage" id="pic23">
+            <div class="right">
+                <div class="row1">
+                    <img src="./images/collage1.jpeg" alt="photo_collage" id="pic11">
+                    <img src="/images/collage2.png" alt="photo_collage" id="pic12">
+                </div>
+
+                <div class="row2">
+                    <img src="./images/collage3.jpeg" alt="photo_collage" id="pic21">
+                    <img src="/images/collage4.png" alt="photo_collage" id="pic22">
+                    <img src="/images/collage5.png" alt="photo_collage" id="pic23">
+                </div>
             </div>
         </div>
     </div>
@@ -266,7 +273,7 @@
             <br>
             <h5>Develop, Deploy & Use securely</h5>
 
-          <img src="./mobile.png" alt="mobile_screen" />
+          <img src="./images/mobile.png" alt="mobile_screen" />
         </div>
 
         <hr>
@@ -301,72 +308,74 @@
 
         <div class="row3">
             <p>We're changing the game</p>
-            <img src="./Washingtonp.png" alt="Washington_Post" id="washington" />
-            <img src="./TechCrunch.png" alt="TechCrunch">
-            <img src="./Bloomberg.png" alt="Bloomberg">
-            <img src="./Gizmodo.png" alt="Gizmodo">
-            <img src="./Forbes.png" alt="Forbes">
+            <img src="./images/Washingtonp.png" alt="Washington_Post" id="washington" />
+            <img src="./images/TechCrunch.png" alt="TechCrunch">
+            <img src="/images/Bloomberg.png" alt="Bloomberg">
+            <img src="/images/Gizmodo.png" alt="Gizmodo">
+            <img src="/images/Forbes.png" alt="Forbes">
           </div>
     </div>
 
-    <div class="articles">
-        <div class="row1">
-            <h5>Our articles</h5>
-            <h3>Latest posts</h3>
-            <p>
-                Tools and strategies modern companies need to help secure their IT
-                infrastructures.
-            </p>
-        </div>
-
-        <div class="row2">
-            <div class="outer one">
-                <img src="./image1.jpeg" alt="life" />
-
-                <div class="inner">
-                    <p>Article</p>
-                    <h3>Life at Pinut Technologies</h3>
-                    <p class="oneP">
-                    We imagine new possiblities by connecting trust, resilience and
-                    ...
-                    </p>
-                    <br>
-                    <a href="" class="read">Read more &nbsp;&nbsp;<img src="./arrow_ne.png"></img>
-                    </a>
-                </div>
+    <div class="outerDiv">
+        <div class="articles">
+            <div class="row1">
+                <h5>Our articles</h5>
+                <h3>Latest posts</h3>
+                <p>
+                    Tools and strategies modern companies need to help secure their IT
+                    infrastructures.
+                </p>
             </div>
 
-            <div class="outer two">
-                <img src="./image2.jpeg" alt="emerging_tech" />
-                
-                <div class="inner">
-                    <p>Article</p>
-                    <h3>Emerging Technology Services</h3>
-                    <p class="ppp">
-                    Increasingly, value is driven by enabling digitalisation. We
-                    provide...
-                    </p>
-                    <br>
-                    <a href="">Read more &nbsp;&nbsp;<img src="./arrow_ne.png"></img>
-                    </a>
+            <div class="row2">
+                <div class="outer one">
+                    <img src="/images/image1.jpeg" alt="life" />
+
+                    <div class="inner">
+                        <p>Article</p>
+                        <h3>Life at Pinut Technologies</h3>
+                        <p class="oneP">
+                        We imagine new possiblities by connecting trust, resilience and
+                        security to empower the future of cybersecurity...
+                        </p>
+                        <br>
+                        <a href="" class="read">Read more &nbsp;&nbsp;<img src="./images/arrow_ne.png"></img>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        
-            <div class="outer three">
-                <img src="./image3.jpeg" alt="future" />
-                
-                <div class="inner">
-                    <p>Article</p>
-                    <h3>Future of Cybersecurity</h3>
-                    <p>
-                        The rise of restful APIs has been met by a rise in tools for creating, testing, and managing them.
-                    </p>
+
+                <div class="outer two">
+                    <img src="/images/image2.jpeg" alt="emerging_tech" />
                     
-                    <a href="">Read more &nbsp;&nbsp;<img src="./arrow_ne.png"></img>
-                    </a>
+                    <div class="inner">
+                        <p>Article</p>
+                        <h3>Emerging Technology Services</h3>
+                        <p class="ppp">
+                        Increasingly, value is driven by enabling digitalisation. We
+                        provide...
+                        </p>
+                        <br>
+                        <a href="">Read more &nbsp;&nbsp;<img src="./images/arrow_ne.png"></img>
+                        </a>
+                    </div>
                 </div>
-            </div>
+            
+                <div class="outer three">
+                    <img src="/images/image3.jpeg" alt="future" />
+                    
+                    <div class="inner">
+                        <p>Article</p>
+                        <h3>Future of Cybersecurity</h3>
+                        <p>
+                            The rise of restful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <br>
+                        <a href="">Read more &nbsp;&nbsp;<img src="./images/arrow_ne.png"></img>
+                        </a>
+                    </div>
+                </div>
 
+            </div>
         </div>
     </div>
 
@@ -396,51 +405,53 @@
     </div>
     <br>
 
-    <div class="footer" id="footer">
-        <hr>
-        <br>
-        <div class="foot">
-        <div class="box1">
-            <div class="biz_name">
-                <img src="./logo.png" alt="logo" id="logo"/>
-                <h3>PINUT<span id="red">Security</span></h3>
-                <br>
+    <div class="outerDiv">
+        <div class="footer" id="footer">
+            <hr>
+            <br>
+            <div class="foot">
+            <div class="box1">
+                <div class="biz_name">
+                    <img src="./images/logo.png" alt="logo" id="logo"/>
+                    <h3>PINUT<span id="red">Security</span></h3>
+                    <br>
+                </div>
+
+                <p class="up">
+                    Develop, Deploy & Use securely
+                </p>
+                <p class="down">
+                    Need help:<br />
+                    P: +234 235 156 7895 <br />
+                    E: support@pinutsecurity.ng <br />
+                    Pinut security consulting is powered by Pinut technologies
+                </p>
             </div>
+            <br>
 
-            <p class="up">
-                Develop, Deploy & Use securely
-            </p>
-            <p class="down">
-                Need help:<br />
-                P: +234 235 156 7895 <br />
-                E: support@pinutsecurity.ng <br />
-                Pinut security consulting is powered by Pinut technologies
-            </p>
+            <div class="company">
+                <h3>Company</h3>
+                <a href="">Privacy policy</a> <br>
+                <a href="">Term of Use</a><br>
+                <a href="">License</a>
+            </div>
+            <br>
+
+            <div class="address">
+                <h3>Address</h3>
+                <p>
+                6th Floor (Regus) Landmark Towers, <br> Water Corporation Drive, VI,
+                Lagos
+                </p>
+            </div>
         </div>
-        <br>
+            <br>
 
-        <div class="company">
-            <h3>Company</h3>
-            <a href="">Privacy policy</a> <br>
-            <a href="">Term of Use</a><br>
-            <a href="">License</a>
-        </div>
-        <br>
-
-        <div class="address">
-            <h3>Address</h3>
-            <p>
-              6th Floor (Regus) Landmark Towers, <br> Water Corporation Drive, VI,
-              Lagos
-            </p>
+            <hr />
+            <br>
+            <p>2022. Pinut Technologies. All rights reserved.</p>
         </div>
     </div>
-        <br>
-
-        <hr />
-        <br>
-        <p>2022. Pinut Technologies. All rights reserved.</p>
-    
 
     <script>
         function myFunction() {
